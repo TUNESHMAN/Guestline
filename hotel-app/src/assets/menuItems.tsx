@@ -4,6 +4,6 @@ export const menuItems = [
   {
     text: "Hotels",
     icon: <HotelIcon />,
-    path: "/hotels",
+    path: "/",
   },
 ];
