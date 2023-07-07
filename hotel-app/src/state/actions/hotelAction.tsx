@@ -28,7 +28,6 @@ export const getRooms = (id: string) => (dispatch: any) => {
   axios
     .get(`https://obmng.dbm.guestline.net/api/roomRates/OBMNG/${id} `)
     .then((response) => {
-      console.log(response.data, "HOTEL DETAILS");
       dispatch({ type: hotelTypes.GET_HOTEL_ROOMS, payload: response.data });
     })
     .catch((error) => {

@@ -15,7 +15,7 @@ const HeaderBreadCrumb = () => {
         separator={<NavigateNextIcon fontSize="small" />}
       >
         {pathNames.map((name, index) => {
-          const routeTo = `/${pathNames.slice(0, index + 1).join("/")}`;
+          const routeTo = `/`;
           const isLast = index === pathNames.length - 1;
           return isLast ? (
             <Typography
